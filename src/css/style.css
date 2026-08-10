@@ -9,6 +9,13 @@ span{
     padding: 11px;
     gap: 11px;
 }
+a{
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+#logo{
+    height: 75px;
+}
 .nav-secundaria{
     display: flex;
     justify-content: space-evenly;
@@ -20,4 +27,17 @@ span{
 .nav-secundaria--coluna1, .nav-secundaria--coluna2{
     display: flex;
 }
-
+.nav-primaria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navegacao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
