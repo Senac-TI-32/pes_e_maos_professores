@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span{
+    display: flex;
+    align-items: center;
+    padding: 11px;
+    gap: 11px;
+}
+a{
+    text-decoration: none;
+    font-size: 1.25rem;
+}

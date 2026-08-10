@@ -1,0 +1,13 @@
+@media (min-width: 768px){
+    
+    
+}
+
+@media (max-width: 480px){
+    
+    .texto-nav-secundaria{
+        display: none;
+    }
+
+
+}
