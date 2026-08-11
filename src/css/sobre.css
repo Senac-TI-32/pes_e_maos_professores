@@ -1,5 +1,45 @@
 #about_section{
      display: flex;
-     background-color: rgb(240, 242, 127);
+     flex-direction: column;
+     max-width: 1200px;
+     margin: 0 auto;
      height: 800px;
+}
+.texto-sobre{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+     align-items: center;
+     flex-direction: column;
+     padding: 10px 60px 20px 60px;
+}
+.container-cards{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     padding: 35px 20px;
+}
+.card-sobre{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 288px;
+}
+.imagem-card-sobre{
+     width: 200px;
+     border-radius: 50%;
+     border: solid 7px pink;
+}
+.texto-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+    gap: 25px;
+}
+.descricao-card-sobre{
+     text-align: center;
+     line-height: 1.5;
 }
