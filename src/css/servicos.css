@@ -1,5 +1,34 @@
 #services_section{
      display: flex;
      background-color: var(--cor-terciaria);
-     height: 912px;
+     height: auto;
+     
+}
+.container-servicos{
+     display: flex;
+     flex-direction: column;
+     max-width: 1200px;
+     margin: 0 auto;
+}
+.texto-titulo-servicos{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.texto-spa-font-servicos{
+     font-family: "Bonheur Royale", cursive;
+     font-weight: 400;
+     font-style: normal;
+     font-size: var(--tamanho-fonte-titulo);
+}
+.texto-spa-servicos{
+     font-family: "Plus Jakarta Sans", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: normal;
+}
+
+
+.imagem-texto-servicos{
+     display: flex;
 }
