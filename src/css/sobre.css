@@ -43,3 +43,10 @@
      text-align: center;
      line-height: 1.5;
 }
+.preco-card-sobre{
+     background-image: url('../img/sobre/fundo_preco.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+
+}
