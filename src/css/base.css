@@ -11,5 +11,14 @@ span{
 }
 a{
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: var(--tamanho-fonte-ancora);
+}
+h1{
+    font-size: var(--tamanho-fonte-titulo);
+}
+h2{
+    font-size: var(--tamanho-fonte-subtitulo);
+}
+p{
+    font-size: var(--tamanho-fonte-texto-padrao);
 }
