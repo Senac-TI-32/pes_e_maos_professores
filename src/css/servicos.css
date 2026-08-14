@@ -31,4 +31,45 @@
 
 .imagem-texto-servicos{
      display: flex;
+     padding: 20px;
+     gap: 25px;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     align-content: center;
+}
+
+.imagem-card-servicos{
+     display: flex;
+}
+.lista-texto-servicos{
+     display: flex;
+     flex-direction: column;
+}
+.lista-coluna-servicos{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     list-style-type: decimal;
+     font-family: "Plus Jakarta Sans", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 600;
+     font-style: normal;
+     margin-left: 20px;
+}
+.lista-linha-servicos{
+     display: flex;
+     list-style-type: none;
+     font-family: "Bonheur Royale", cursive;
+     font-weight: 500;
+     font-style: normal;
+     font-size: var(--tamanho-fonte-titulo);
+}
+
+.btn-cta-servicos{
+     width: 220px;
+     height: 60px;
+     background-color: var(--cor-primaria);
+     color: var(--cor-contraste);
+     border-radius: 30px;
 }
