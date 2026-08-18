@@ -6,7 +6,7 @@ kebab-case = todas as letras em minúscula e separadas por traço
 */
 // arrays
 const secoes = ["hero", "sobre", "servicos", "galeria", "precos", "relatos"]
-
+let numero_slide = 0
 
 async function carregarSecoes(nome) {
     const secaoHTML = await fetch(`src/partials/${nome}.html`)
@@ -21,5 +21,16 @@ async function montarPagina() {
             console.error(e.message)
         }
     }
+   await mostraSlide(numero_slide)
 }
 montarPagina()
+
+
+
+async function mostraSlide(numero){
+    //                         tag = elemento html
+    //                          # = id no html
+    //                          . = classe no html
+    let slides = document.querySelectorAll(".slide-imagem-hero")
+    slides[numero].style.display = "block"
+}
