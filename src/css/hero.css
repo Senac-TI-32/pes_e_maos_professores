@@ -5,6 +5,8 @@
 .container-section-hero{
     position: relative;
     max-width: 1200px;
+    width: 1200px;
+    margin: auto;
     height: 80vh;
 }
 
@@ -15,7 +17,6 @@
     margin: auto;
     height: 600px;
     top: 0px;
-    left: 50px;
     display: none;
 }
 .antes, .depois{
@@ -27,4 +28,7 @@
 }
 .depois{
     right: 0;
+}
+.imagem-slide-hero{
+    
 }

@@ -21,16 +21,44 @@ async function montarPagina() {
             console.error(e.message)
         }
     }
-   await mostraSlide(numero_slide)
+   lucide.createIcons();
+   await mostraSlide()
 }
 montarPagina()
 
 
 
-async function mostraSlide(numero){
+async function mostraSlide(botao=""){
     //                         tag = elemento html
     //                          # = id no html
     //                          . = classe no html
+   
     let slides = document.querySelectorAll(".slide-imagem-hero")
-    slides[numero].style.display = "block"
+    //slides[numero].style.display = "block"
+    if(botao==="antes"){
+        numero_slide = numero_slide - 1
+    }else if(botao === "depois"){
+        numero_slide = numero_slide + 1
+    }
+    
+    if(numero_slide < 0 && botao==="antes"){
+        numero_slide = 3
+    }else if(numero_slide > 3 && botao==="depois"){
+        numero_slide = 0
+    }
+    console.log(botao)
+    console.log(numero_slide)
+    console.log(slides.length)
+    /*
+        i=0    i <4 = true
+        i=1    i <4  = true
+        i=2    i <4  = true
+        i=3    i <4  = true
+        i=4    i <4  = false
+    */
+    for(let i=0; i < slides.length; i++){
+        slides[i].style.display = 'none'
+    }
+    slides[numero_slide].style.display = 'block'
+    
 }
