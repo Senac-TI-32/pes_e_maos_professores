@@ -4,18 +4,15 @@
 }
 .container-section-hero{
     position: relative;
-    max-width: 1200px;
-    width: 1200px;
+    max-width: 100%;
+    width: 100%;
     margin: auto;
-    height: 80vh;
 }
 
 .slide-imagem-hero{
-    position: absolute;
     background-color: blueviolet;
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
-    height: 600px;
     top: 0px;
     display: none;
 }
@@ -30,5 +27,5 @@
     right: 0;
 }
 .imagem-slide-hero{
-    
+    width: 100%;
 }
