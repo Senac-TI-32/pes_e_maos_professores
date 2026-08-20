@@ -1,4 +1,5 @@
 import { mostraSlide } from './secoes/hero_slide.js'
+import { carregarNavbar } from './secoes/navbar.js'
 /*
 PascalCase = primeira letra de cada palavra em maiúscula
 ---- camelCase = primeira letra da primeira palavra em minúscula e a primeira letra das demais palavras em maiúscula
@@ -24,8 +25,26 @@ async function montarPagina() {
    lucide.createIcons();
    await mostraSlide()
 }
-montarPagina()
+carregarNavbar()
+//                                 ou 
+if(window.location.pathname === '' || window.location.pathname === '/' || window.location.pathname === '/index.html'){
+    montarPagina()
+}
 
+const botaotopo = document.querySelector(".btn-topo")
+
+botaotopo.addEventListener("click", ()=>{
+    window.scrollTo(0, 0)
+})
+window.addEventListener("scroll", ()=>{
+    if(window.scrollY > 50){
+        botaotopo.style.display = 'block'
+    }
+    if(window.scrollY < 50){
+        botaotopo.style.display = 'none'
+    }
+
+})
 
 
 

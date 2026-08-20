@@ -22,3 +22,13 @@ h2{
 p{
     font-size: var(--tamanho-fonte-texto-padrao);
 }
+
+.btn-topo{
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 60px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
