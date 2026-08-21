@@ -3,6 +3,9 @@ async function mostraSlide(){
     const btantes =  document.getElementById("btn-antes")
     const btndepois = document.getElementById("btn-depois")
     mostrarOcultar(numero_slide)
+    setInterval(()=>{
+        btndepois.click();
+    },3000)
     btantes.addEventListener("click", ()=>{
         numero_slide = numero_slide - 1
         if(numero_slide < 0){
