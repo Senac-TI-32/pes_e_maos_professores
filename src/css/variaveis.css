@@ -6,6 +6,7 @@
     --cor-rodape-primario: #A9B69C;
     --cor-contraste: #000000;
     --cor-detalhe: #E8C875;
+    --cor-gradiente-base: linear-gradient(to right, #DA869E 42%, var(--cor-primaria) 70%, #743A4A 100%);
     --tamanho-fonte-titulo: 2rem;
     --tamanho-fonte-subtitulo: 1.5rem;
     --tamanho-fonte-texto-padrao: 1rem;

@@ -1,5 +1,57 @@
 #precos{
      display: flex;
-     background-color: rgb(154, 127, 242);
+     background-color: rgb(255, 255, 255);
      height: 980px;
+     max-width: 1200px;
+     margin: 0 auto;
+}
+.container-precos{
+     max-width: 1200px;
+     margin: 0 auto;
+}
+.container-cards-precos{
+     display: flex;
+     margin: 50px 0 0 50px;
+     gap: 60px;
+     flex-wrap: wrap;
+}
+
+.card-precos{
+     display: flex;
+     flex-direction: column;
+     background-color: var(--cor-terciaria);
+     justify-content: space-around;
+     align-items: center;
+     gap: 50px;
+     border-radius: 100px 100px 15px 15px;
+     border: solid 4px var(--cor-terciaria);
+     cursor: pointer;
+     padding: 0 0 20px 0;
+}
+ /* 
+ X é lateral
+ Y cima e baixo 
+ */
+.card-precos:hover{
+     transform: translateY(-10px);
+     transition: 0.5s;
+}
+
+.card-detalhe{
+     background: var(--cor-gradiente-base);
+     color: white;
+}
+
+.btn-detalhe{
+     background: var(--cor-terciaria);
+}
+
+.imagem-card-preco{
+     width: 200px;
+     border-radius: 50%;
+}
+
+.descricao-card-preco{
+    list-style-type: none;
+    padding: 5px;
 }
