@@ -1,5 +1,7 @@
 import { mostraSlide } from './secoes/hero_slide.js'
 import { carregarNavbar } from './secoes/navbar.js'
+import { galeriaSection } from './secoes/galeria.js'
+
 const secoes = ["hero", "sobre", "servicos", "galeria", "precos", "relatos"]
 async function carregarSecoes(nome) {
     const secaoHTML = await fetch(`src/partials/${nome}.html`)
@@ -15,11 +17,13 @@ async function montarPagina() {
     }
    lucide.createIcons();
    await mostraSlide()
+   galeriaSection()
 }
 carregarNavbar()
 //                                 ou 
 if(window.location.pathname === '' || window.location.pathname === '/' || window.location.pathname === '/index.html'){
     montarPagina()
+    
 }
 const botaotopo = document.querySelector(".btn-topo")
 botaotopo.addEventListener("click", ()=>{

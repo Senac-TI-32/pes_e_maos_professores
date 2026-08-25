@@ -11,7 +11,6 @@ async function mostraSlide(){
         if(numero_slide < 0){
             numero_slide = 3
         }
-        console.log(numero_slide)
         mostrarOcultar(numero_slide)
     } )
 
@@ -20,7 +19,6 @@ async function mostraSlide(){
          if(numero_slide > 3){
             numero_slide = 0
         }
-        console.log(numero_slide)
         mostrarOcultar(numero_slide)
     })
     
@@ -45,7 +43,6 @@ async function mostraSlide(){
 }
 function mostrarOcultar(numero_slide){
     let slides = document.querySelectorAll(".slide-imagem-hero")
-    console.log(slides)
     for(let i=0; i < slides.length; i++){
         slides[i].style.display = 'none'
     }
