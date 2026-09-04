@@ -30,31 +30,38 @@
           <section id="contato">
             <div class="container-contato">
               <form id="form-contato">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome">
-                <label for="idade">Idade</label>
-                <input type="text" name="idade" id="idade">
-                <button type="submit">Enviar</button>
+                <div class="grupo-form">
+                  <label for="nome">Nome:</label>
+                  <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="grupo-form">
+                  <label for="assunto">Assunto:</label>
+                  <input type="text" name="assunto" id="assunto" required>
+                </div>
+                <div class="grupo-form">
+                  <label for="email">E-mail:</label>
+                  <input type="email" name="email" id="email" required>
+                </div>
+                <div class="grupo-form">
+                  <label for="mensagem">Mensagem:</label>
+                  <textarea name="mensagem" id="mensagem" cols="45" rows="15" required></textarea>
+                </div>
+                <div class="grupo-btn">
+                  <button type="reset" class="btn-reset">Cancelar</button>
+                  <button type="submit" class="btn-enviar">Enviar</button>
+                </div>
               </form>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2587.324343793534!2d-46.433934089742635!3d-23.495458538672054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce63dda7be6fb9%3A0xa74e7d5a53104311!2sSenac%20S%C3%A3o%20Miguel%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1788524003588!5m2!1spt-BR!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
               <div id="resultado">
               </div>
             </div>
           </section>
       </main>
+      <button class="btn-topo">Ao Topo</button>
     <footer>
     </footer>
+  
   <script src="./src/js/main.js" type="module"></script>
-<script>
-    const formulario = document.getElementById("form-contato")
-    formulario.addEventListener("submit", (event)=>{
-      event.preventDefault()
-        const nome = document.getElementById("nome")
-        const idade = document.getElementById("idade")
-
-        document.getElementById("resultado").innerHTML = `O nome: ${nome.value}  e a idade: ${idade.value} `
-
-    })
-
-</script>
+  <script src="./src/js/secoes/contato.js"></script>
 </body>
 </html>
