@@ -9,7 +9,7 @@ function iniciarCapturaFormulario(){
         const mensagem = document.getElementById("mensagem")
 
         if(nome.value === "" || assunto.value === "" || email.value === "" || mensagem.value === ""){
-            alert("um dos campos está vazio")
+            mensagemGenerica("Todos os campos são obrigatórios!");
             return true
         }
 
@@ -20,16 +20,20 @@ function iniciarCapturaFormulario(){
             mensagem: mensagem.value
         }
 
+       
+       
+        mensagemEspera("Aguarde", "Enviando email...", 5000)
        const confirmacao = await enviarEmail(dados)
        if(confirmacao.status){
-            resultado.innerHTML = "Email enviado com sucesso"
+            mensagemGenerica("Email enviado com sucesso!");
+            clearInterval(timerInterval);
             nome.value = ""
             assunto.value = ""
             email.value = ""
             mensagem.value = ""
 
        }else{
-            resultado.innerHTML = ` Erro:  ${confirmacao.mensagem}`
+            mensagemGenerica(` Erro:  ${confirmacao.mensagem}`); 
        }
 
     })

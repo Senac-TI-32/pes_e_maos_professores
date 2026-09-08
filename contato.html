@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
     <script src="./src/js/lucide.min.js"></script>
+    <script src="./src/js/sweetalert2.js"></script>
     <!-- <script src="./src/js/scriptAula1JS.js"></script> -->
      
 </head>
@@ -32,19 +33,19 @@
               <form id="form-contato">
                 <div class="grupo-form">
                   <label for="nome">Nome:</label>
-                  <input type="text" name="nome" id="nome" required>
+                  <input type="text" name="nome" id="nome" >
                 </div>
                 <div class="grupo-form">
                   <label for="assunto">Assunto:</label>
-                  <input type="text" name="assunto" id="assunto" required>
+                  <input type="text" name="assunto" id="assunto" >
                 </div>
                 <div class="grupo-form">
                   <label for="email">E-mail:</label>
-                  <input type="email" name="email" id="email" required>
+                  <input type="email" name="email" id="email" >
                 </div>
                 <div class="grupo-form">
                   <label for="mensagem">Mensagem:</label>
-                  <textarea name="mensagem" id="mensagem" cols="45" rows="15" required></textarea>
+                  <textarea name="mensagem" id="mensagem" cols="45" rows="15" ></textarea>
                 </div>
                 <div class="grupo-btn">
                   <button type="reset" class="btn-reset">Cancelar</button>
@@ -62,6 +63,7 @@
     </footer>
   
   <script src="./src/js/main.js" type="module"></script>
+  <script src="./src/js/secoes/modal_mensagem.js"></script>
   <script src="./src/js/secoes/contato.js"></script>
 </body>
 </html>
