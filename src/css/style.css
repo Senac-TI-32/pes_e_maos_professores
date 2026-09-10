@@ -10,3 +10,5 @@
 @import url('./relatos.css');
 @import url('./modal.css');
 @import url('./contato.css');
+@import url('../../slick/slick-theme.css');
+@import url('../../slick/slick.css');

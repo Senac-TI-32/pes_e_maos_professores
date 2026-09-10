@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="src/css/style.css">
     <script src="./src/js/lucide.min.js"></script>
     <!-- <script src="./src/js/scriptAula1JS.js"></script> -->
-     
 </head>
 <body>
     <header id="navbar">
@@ -55,9 +54,18 @@
 
 
   <script src="./src/js/main.js" type="module"></script>
-<script>
-    
+<script type="text/javascript" src="src/js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="src/js/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 
-</script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slick-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1
+      });
+    });
+  </script>
 </body>
 </html>
