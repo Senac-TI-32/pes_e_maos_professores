@@ -1,5 +1,59 @@
 #relatos{
      display: flex;
      background-color: rgb(233, 106, 110);
-     height: 493px;
+     height: auto;
+     padding: 50px 0;
+}
+.container-relatos{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     max-width: 1200px;
+     width: 100%;
+     margin: 0 auto;
+}
+.container-relatos .slick-slider{
+     width: 100%;
+     margin-top: 40px;
+}
+.card-relato{
+     display: flex !important;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     background-color: var(--cor-terciaria);
+     border-radius: 12px;
+     padding: 30px 20px;
+     margin: 10px;
+     min-height: 260px;
+}
+.icone-relato{
+     color: var(--cor-primaria);
+     width: 32px;
+     height: 32px;
+     margin-bottom: 10px;
+}
+.estrelas-relato{
+     color: var(--cor-detalhe);
+     margin: 10px 0;
+}
+.estrelas-relato i{
+     width: 18px;
+     height: 18px;
+     fill: var(--cor-detalhe);
+}
+.nome-relato{
+     margin-top: 15px;
+     font-family: "Plus Jakarta Sans", sans-serif;
+     font-weight: 600;
+}
+.container-relatos .slick-prev:before,
+.container-relatos .slick-next:before{
+     color: var(--cor-contraste);
+}
+.container-relatos .slick-dots li button:before{
+     color: var(--cor-terciaria);
+}
+.container-relatos .slick-dots li.slick-active button:before{
+     color: var(--cor-detalhe);
 }
