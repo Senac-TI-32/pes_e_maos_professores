@@ -1,6 +1,7 @@
 import { mostraSlide } from './secoes/hero_slide.js'
 import { carregarNavbar } from './secoes/navbar.js'
 import { galeriaSection } from './secoes/galeria.js'
+import { relatosSection } from './secoes/relatos.js'
 
 const secoes = ["hero", "sobre", "servicos", "galeria", "precos", "relatos"]
 async function carregarSecoes(nome) {
@@ -18,6 +19,7 @@ async function montarPagina() {
    lucide.createIcons();
    await mostraSlide()
    galeriaSection()
+   relatosSection()
 }
 carregarNavbar()
 //                                 ou 
