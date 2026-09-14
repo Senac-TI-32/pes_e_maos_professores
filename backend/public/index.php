@@ -8,17 +8,20 @@ function enviarEmail($dados){
     $mail = new PHPMailer(true);
     try {
         //Server settings
-        //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+        //$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+        //para senha do app google, siga o link abaixo e gere uma senha para o app, depois coloque no campo $mail->Password
+        // https://myaccount.google.com/apppasswords
+
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'rodrigohipnose@gmail.com';                     //SMTP username
+        $mail->Username   = 'xxxxxx@gmail.com';                     //SMTP username
         $mail->Password   = "";                               //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
         $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         //a pessoa do formulario email que foi colocado no formulario
         $mail->setFrom($dados->email, 'Mailer');
-        $mail->addAddress('rodrigohipnose@gmail.com', 'Joe User');     //Add a recipient
+        $mail->addAddress('xxxxxx@gmail.com', 'Joe User');     //Add a recipient
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = $dados->assunto;

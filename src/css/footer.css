@@ -1,0 +1,137 @@
+#footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-topo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: var(--cor-rodape-primario);
+    padding: 60px 80px;
+}
+
+.footer-coluna{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 220px;
+}
+
+.footer-logo{
+    font-size: 2.5rem;
+    color: var(--cor-contraste);
+}
+
+.footer-horario{
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.footer-redes{
+    display: flex;
+    gap: 12px;
+    list-style: none;
+}
+
+.footer-redes a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-contraste);
+    transition: 0.3s;
+}
+
+.footer-redes a:hover{
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+}
+
+.footer-titulo{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.footer-destaque{
+    font-weight: 700;
+}
+
+.footer-link{
+    font-size: 1rem;
+    color: var(--cor-contraste);
+}
+
+.grupo-newsletter{
+    display: flex;
+}
+
+.grupo-newsletter input{
+    flex: 1;
+    border: none;
+    padding: 0 15px;
+    height: 45px;
+    border-radius: 4px 0 0 4px;
+}
+
+.btn-inscrever{
+    border: none;
+    padding: 0 20px;
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-inscrever:hover{
+    background-color: var(--cor-contraste);
+}
+
+.footer-descricao{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.footer-base{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--cor-rodape-secundario);
+    color: #ffffff;
+    padding: 20px 80px;
+}
+
+.footer-base p{
+    font-size: 0.85rem;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.footer-ano{
+    display: inline;
+    padding: 0;
+    gap: 0;
+}
+
+.footer-links-base{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.footer-links-base a{
+    font-size: 0.85rem;
+    color: #ffffff;
+}
+
+.footer-links-base a:hover{
+    color: var(--cor-secundaria);
+}

@@ -2,8 +2,9 @@ import { mostraSlide } from './secoes/hero_slide.js'
 import { carregarNavbar } from './secoes/navbar.js'
 import { galeriaSection } from './secoes/galeria.js'
 import { relatosSection } from './secoes/relatos.js'
+import { footerSection } from './secoes/footer.js'
 
-const secoes = ["hero", "sobre", "servicos", "galeria", "precos", "relatos"]
+const secoes = ["hero", "sobre", "servicos", "galeria", "precos", "relatos", "footer"]
 async function carregarSecoes(nome) {
     const secaoHTML = await fetch(`src/partials/${nome}.html`)
     document.getElementById(nome).innerHTML = await secaoHTML.text()
@@ -20,6 +21,7 @@ async function montarPagina() {
    await mostraSlide()
    galeriaSection()
    relatosSection()
+   footerSection()
 }
 carregarNavbar()
 //                                 ou 

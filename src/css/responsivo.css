@@ -4,10 +4,24 @@
 }
 
 @media (max-width: 480px){
-    
+
     .texto-nav-secundaria{
         display: none;
     }
 
+    .footer-topo{
+        padding: 40px 20px;
+    }
+
+    .footer-base{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-links-base{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
 }

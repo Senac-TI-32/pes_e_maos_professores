@@ -1,3 +1,4 @@
+import {enviarEmail} from "../enviarEmail.js"
 function iniciarCapturaFormulario(){
     const formulario = document.getElementById("form-contato")
     formulario.addEventListener("submit", async (event)=>{
@@ -39,14 +40,7 @@ function iniciarCapturaFormulario(){
     })
 }
 
-async function enviarEmail(dados){
-    const resultado = await fetch("./backend/public/index.php",{
-        method: "POST",
-        body: JSON.stringify(dados)
-    })
-    const resposta = await resultado.json()
-    return resposta
-}
+
 
 
 iniciarCapturaFormulario()

@@ -10,7 +10,7 @@ function mensagemEspera(titulo, mensagem, tempo){
                 Swal.showLoading();
                 const timer = Swal.getPopup().querySelector("b");
                 timerInterval = setInterval(() => {
-                timer.textContent = `${Swal.getTimerLeft()}`;
+                //timer.textContent = `${Swal.getTimerLeft()}`;
                 }, 100);
             },
            
