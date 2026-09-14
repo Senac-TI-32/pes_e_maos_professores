@@ -43,6 +43,7 @@
 }
 .lista-linha-servicos{
      display: flex;
+     flex-wrap: wrap;
      list-style-type: none;
      font-family: "Bonheur Royale", cursive;
      font-weight: 500;

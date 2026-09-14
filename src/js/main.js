@@ -24,18 +24,19 @@ async function montarPagina() {
    footerSection()
 }
 carregarNavbar()
-//                                 ou 
+//                                 ou
 if(window.location.pathname === '' || window.location.pathname === '/' || window.location.pathname === '/index.html'){
     montarPagina()
-    
+
 }
+lucide.createIcons();
 const botaotopo = document.querySelector(".btn-topo")
 botaotopo.addEventListener("click", ()=>{
     window.scrollTo(0, 0)
 })
 window.addEventListener("scroll", ()=>{
     if(window.scrollY > 50){
-        botaotopo.style.display = 'block'
+        botaotopo.style.display = 'flex'
     }
     if(window.scrollY < 50){
         botaotopo.style.display = 'none'
