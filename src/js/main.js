@@ -4,36 +4,54 @@ import { galeriaSection } from './secoes/galeria.js'
 import { relatosSection } from './secoes/relatos.js'
 import { footerSection } from './secoes/footer.js'
 
-const secoes = ["hero", "sobre", "servicos", "galeria", "precos", "relatos", "footer"]
-async function carregarSecoes(nome) {
-    const secaoHTML = await fetch(`src/partials/${nome}.html`)
-    document.getElementById(nome).innerHTML = await secaoHTML.text()
-}
-async function montarPagina() {
-    for(const nome of secoes){
-        try{
-            await carregarSecoes(nome)
-        }catch(e){
-            console.error(e.message)
-        }
-    }
-   lucide.createIcons();
-   await mostraSlide()
-   galeriaSection()
-   relatosSection()
-   footerSection()
-}
-carregarNavbar()
-//                                 ou
-if(window.location.pathname === '' || window.location.pathname === '/' || window.location.pathname === '/index.html'){
-    montarPagina()
+function iniciarPaiginaHome(){
 
+    mostraSlide()
+    galeriaSection()
+    relatosSection()
+    footerSection()
 }
+
+if(document.getElementById('hero')){
+    iniciarPaiginaHome()
+}
+
+/* V.1 - FrontEnd */
+//const secoes = ["hero", "sobre", "servicos", "galeria", "precos", "relatos", "footer"]
+
+// async function carregarSecoes(nome) {
+//     const secaoHTML = await fetch(`src/partials/${nome}.html`)
+//     document.getElementById(nome).innerHTML = await secaoHTML.text()
+// }
+
+
+// async function montarPagina() {
+//     for(const nome of secoes){
+//         try{
+//             await carregarSecoes(nome)
+//         }catch(e){
+//             console.error(e.message)
+//         }
+//     }
+//    lucide.createIcons();
+//    await mostraSlide()
+//    galeriaSection()
+//    relatosSection()
+//    footerSection()
+// }
+// carregarNavbar()
+// //                                 ou
+// if(window.location.pathname === '' || window.location.pathname === '/' || window.location.pathname === '/index.html'){
+//     montarPagina()
+
+// }
+
 lucide.createIcons();
 const botaotopo = document.querySelector(".btn-topo")
 botaotopo.addEventListener("click", ()=>{
     window.scrollTo(0, 0)
 })
+
 window.addEventListener("scroll", ()=>{
     if(window.scrollY > 50){
         botaotopo.style.display = 'flex'

@@ -27,3 +27,5 @@ src/
 slick/  backend/                  <- sem mudanças
 aula-a-aula/                      <- esta documentação
 
+
+# Aula 02: Alimentando as páginas com base no conteúdo do FrontEnd
